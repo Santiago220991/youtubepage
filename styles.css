@@ -1,21 +1,44 @@
+body{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: #000000;
+    color: white;
+}
+nav{
+    flex:0 1 100%;
+}
+section{
+    flex:2 1 55%;
+    border-bottom: solid 1px gray;
+}
+aside{
+    flex:0 1 40%;
+    margin-left:40px;
+}
 .navbar{
-    height: 56px;
     padding: 0px;
     background-color: #000000;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 nav ul{
     display:flex;
 }
 nav ul li{
     display:inline-block;
+    cursor:pointer;
 }
 
 #searcher{
     flex:0 0 30%;
 }
 #searcher input{
-    height: 40px;
+    height: 44px;
+    border-radius: 2px #FFFFFF30;
+}
+::placeholder{
+    font-size: 20px;
 }
 #search{
     width: 100%;
@@ -25,16 +48,17 @@ nav ul li{
     flex:2 2 1px;
     color:#000000;
     opacity: 0;
+    cursor:auto;
 }
 
 .sicon{
     flex:0 0 auto;
-    background-color:#FFFFFF14;
+    background-color:#FFFFFF30;
     border-radius: 2px;
     margin-right: 20px;
 }
 .micro{
-    background-color: #FFFFFF11;
+    background-color: #FFFFFF30;
     border-radius: 50%;
 }
 ion-icon {
@@ -52,6 +76,7 @@ ion-icon {
     color:red;
     margin-left: 30px;
     margin-right: 5px;
+
 }
 
 .apps{
@@ -62,4 +87,26 @@ ion-icon {
 .user{
     margin-right: 10px;
     margin-left: 10px;
+}
+
+.ul-1{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left:0px
+}
+
+.ul-1 li{
+    display: inline-block;
+    flex: 0 1 100%;
+}
+
+.ul-2{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left:0px;
+}
+
+.ul-2 li{
+    display: inline-block;
+    flex: 0 1 auto;
 }
