@@ -1,0 +1,65 @@
+.navbar{
+    height: 56px;
+    padding: 0px;
+    background-color: #000000;
+    align-items: center;
+}
+nav ul{
+    display:flex;
+}
+nav ul li{
+    display:inline-block;
+}
+
+#searcher{
+    flex:0 0 30%;
+}
+#searcher input{
+    height: 40px;
+}
+#search{
+    width: 100%;
+}
+
+.space{
+    flex:2 2 1px;
+    color:#000000;
+    opacity: 0;
+}
+
+.sicon{
+    flex:0 0 auto;
+    background-color:#FFFFFF14;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+.micro{
+    background-color: #FFFFFF11;
+    border-radius: 50%;
+}
+ion-icon {
+    font-size: 40px;
+    color: white;
+}
+.yttext{
+    font-size: 38px;
+    color:white;
+    font-weight: bold;
+    letter-spacing: -3px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.yticon ion-icon{
+    color:red;
+    margin-left: 30px;
+    margin-right: 5px;
+}
+
+.apps{
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.user{
+    margin-right: 10px;
+    margin-left: 10px;
+}
