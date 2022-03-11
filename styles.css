@@ -152,7 +152,16 @@ ion-icon {
     
 }
 .imagenes ul li{
-    display: inline-block;
+    display: flex;
     flex:0 1 100%;
     margin-bottom: 1em;
+}
+
+.imagenes ul li span{
+    vertical-align: text-top;
+    margin-left: 10px;
+    flex: 2 0 auto;
+}
+.imagenes ul li img{
+    vertical-align: text-top;
 }
