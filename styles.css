@@ -66,6 +66,10 @@ ion-icon {
     font-size: 40px;
     color: white;
 }
+
+.user ion-icon:hover{
+    color: blueviolet;
+}
 .yttext{
     font-size: 38px;
     color:white;
@@ -116,7 +120,7 @@ ion-icon {
 }
 .ul-2 ul li{
     display: inline-block;
-    
+    cursor: pointer;
 }
 
 .reproducciones{
@@ -143,7 +147,9 @@ ion-icon {
     margin-top: 2px;
     text-align: center;
 }
-
+.sugerencias ul li:hover{
+    background-color: blueviolet;
+}
 .imagenes ul{
     display: flex;
     flex-wrap: wrap;
@@ -155,12 +161,16 @@ ion-icon {
     display: flex;
     flex:0 1 100%;
     margin-bottom: 1em;
+    cursor: pointer;
 }
 
 .imagenes ul li span{
     vertical-align: text-top;
     margin-left: 10px;
     flex: 2 0 auto;
+}
+.imagenes ul li span:hover{
+    color:blueviolet;
 }
 .imagenes ul li img{
     vertical-align: text-top;
