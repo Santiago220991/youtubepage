@@ -5,15 +5,16 @@ body{
     color: white;
 }
 nav{
-    flex:0 1 100%;
+    flex:1 1 100%;
 }
 section{
-    flex:2 1 55%;
-    border-bottom: solid 1px gray;
+    flex:1 1 55%;
+    padding-right: 30px;
+    justify-content: center;
 }
 aside{
-    flex:0 1 40%;
-    margin-left:40px;
+    flex:1 1 40%;
+    align-items: center;
 }
 .navbar{
     padding: 0px;
@@ -104,7 +105,7 @@ ion-icon {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-
+    border-bottom: solid 1px gray;
 }
 .ul-2 ul{
     padding-left:0px;
@@ -122,6 +123,9 @@ ion-icon {
     flex: 2 1 auto;
 }
 
+.promociones{
+    margin-top:1em;
+}
 .sugerencias ul{
     display:flex;
     padding: 0;
@@ -132,9 +136,23 @@ ion-icon {
     border-radius: 10% / 50%;
     border: solid gray 1px;
     background-color: #FFFFFF1A; 
-    flex:0 1 auto;
+    flex:1 1 auto;
     padding:10px 20px;
     cursor: pointer;
     margin-right: 12px;
     margin-top: 2px;
+    text-align: center;
+}
+
+.imagenes ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    
+}
+.imagenes ul li{
+    display: inline-block;
+    flex:0 1 100%;
+    margin-bottom: 1em;
 }
