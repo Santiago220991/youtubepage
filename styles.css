@@ -5,15 +5,16 @@ body{
     color: white;
 }
 nav{
-    flex:0 1 100%;
+    flex:1 1 100%;
 }
 section{
-    flex:2 1 55%;
-    border-bottom: solid 1px gray;
+    flex:1 1 55%;
+    padding-right: 30px;
+    justify-content: center;
 }
 aside{
-    flex:0 1 40%;
-    margin-left:40px;
+    flex:1 1 40%;
+    align-items: center;
 }
 .navbar{
     padding: 0px;
@@ -65,6 +66,10 @@ ion-icon {
     font-size: 40px;
     color: white;
 }
+
+.user ion-icon:hover{
+    color: blueviolet;
+}
 .yttext{
     font-size: 38px;
     color:white;
@@ -102,11 +107,71 @@ ion-icon {
 
 .ul-2{
     display:flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px gray;
+}
+.ul-2 ul{
     padding-left:0px;
+    display:flex;
+    align-items: center;
+    gap:10px;
+    
+}
+.ul-2 ul li{
+    display: inline-block;
+    cursor: pointer;
 }
 
-.ul-2 li{
+.reproducciones{
+    flex: 2 1 auto;
+}
+
+.promociones{
+    margin-top:1em;
+}
+.sugerencias ul{
+    display:flex;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.sugerencias ul li{
     display: inline-block;
-    flex: 0 1 auto;
+    border-radius: 10% / 50%;
+    border: solid gray 1px;
+    background-color: #FFFFFF1A; 
+    flex:1 1 auto;
+    padding:10px 20px;
+    cursor: pointer;
+    margin-right: 12px;
+    margin-top: 2px;
+    text-align: center;
+}
+.sugerencias ul li:hover{
+    background-color: blueviolet;
+}
+.imagenes ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    
+}
+.imagenes ul li{
+    display: flex;
+    flex:0 1 100%;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.imagenes ul li span{
+    vertical-align: text-top;
+    margin-left: 10px;
+    flex: 2 0 auto;
+}
+.imagenes ul li span:hover{
+    color:blueviolet;
+}
+.imagenes ul li img{
+    vertical-align: text-top;
 }
